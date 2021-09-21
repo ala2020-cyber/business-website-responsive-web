@@ -3,13 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Amita&display=swap');
 
 
-
-
-
-
-
-
-
 * {
     margin:0;
     padding:0;
@@ -26,7 +19,8 @@ html::-webkit-scrollbar {
  width:0.6rem;
 }
 html::-webkit-scrollbar-track {
-    background-color: #fa7a7b;
+    background-color:rgba(19, 37, 49, 0.864);
+
 }
 
 html::-webkit-scrollbar-thumb {
@@ -117,8 +111,6 @@ nav {
     display:block;
  
 }
-
-
 /* end   */
 
 
@@ -146,14 +138,14 @@ nav {
     .links a {color:#000; text-decoration: none;font-size:1.1rem;}
     .links a:hover {color:#fc8481;} 
 
-    #contact {
+    .lets-talk {
         border:1px solid #000;
         padding:0.2em;
         border-radius: 7px;
         transition: ease-in-out .5s;
         
     }
-    #contact:hover {
+    .lets-talk:hover {
          font-size:1.5em;
          border:1px solid #fc8481;
     }
@@ -193,10 +185,7 @@ nav {
     html::-webkit-scrollbar {
         width:0.55rem;
     }
-    html::-webkit-scrollbar-track {
-        background-color:rgba(19, 37, 49, 0.864);
-        border-radius:6px;
-    }
+
 
     
 } 
@@ -294,11 +283,6 @@ nav {
     }
 
 }
-
-
-
-
-
 /* end of media query */
 
 
@@ -309,8 +293,9 @@ nav {
     width:100%;
     margin-block-end:0.1em;
 
+    background-color: rgba(233, 233, 233, 0.981);
 
-    background-image: url("../images/design3.jpg");
+    /* background-image: url("../images/design3.jpg"); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -324,7 +309,7 @@ nav {
 
 }
 .review1,.review2,.review3 {
-    border:1px solid rgba(21, 133, 219, 0.481);
+    border:2.4px solid rgba(21, 133, 219, 0.481);
     border-radius:2em;
     padding:1em;
     width:80%;
@@ -336,7 +321,7 @@ nav {
 }
 .review1 a ,.review2 a ,.review3 a {
     text-decoration:none;
-    color:#eee;
+    color:#000;
 }
 .review1 li , .review2 li , .review3 li {
     list-style:none;
@@ -388,6 +373,7 @@ nav {
 
 .statment {
     padding-top: 3em;
+
 }
 
 .review1 p::after , .review3 p::after {
@@ -400,25 +386,28 @@ nav {
 }
 
 
-.review2 .statment{
-    position:relative;
-}
 
-.review2 .statment::after {
+.review2 p::after {
     content:"\201c";
-    position:absolute;
-    top:180px;
-    left:75%;
-    font-size:5.7rem;
     color:rgb(26, 115, 209);
+    font-size:5em;
+    float:right;
 }
 
 
+.person1 ul , .person2 ul , .person3 ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .social-media ul {
     /* border:1px solid #000; */
     margin-block:0.5em;
     padding-inline:1.35em;
+
     display:flex;
+    justify-content: center;
     gap:1em;
 }
 
@@ -430,142 +419,33 @@ nav {
     transition:.2s ease-in-out;
 }
 .social-media i:hover {
-    color:#fa7a7b;
+    color:rgb(210, 70, 210);
 }
 
 /* media query for reviews  */
-@media  screen and (min-width:795px) {
 
 
-    .reviews {
-        border-block:none;
-    }
-
-    .review1 , .review2 , .review3 {
-        border:1px solid #fc838195;
-    }
+@media screen and (min-width:750px) {
 
     .statment {
-        padding-block:4.5em;
-    }
-    .review1 p::after , .review3 p::after {
-        color: #fc8481;
-    }
-    .review2 p::after {
-        color:#fc8481;
-        left:2em;
-    }
-  /* -------------------------- */
-    .review2 .statment {
-        padding-left: 15em;
-        position:relative;
-    }
-    
-
-    .review2 .statment::after {
-        content:"\201c";
-        position:absolute;
-        top:180px;
-        left:75%;
-        font-size:6.5rem;
-        color:#fc8381bd;
-    }
-    
-    /* -------------------------- */
-    .about1 , .about3 {
-        height:max-content;
-        border:1px solid #fc8381bd;
-        border-radius: 2em;
-        position:relative;
-        top:-3em;
-        left:-4.3em;
-        background:rgba(255, 255, 255, 0.302);
-        padding:1em;
-    }
-
-    .about2 {
-        height:max-content;
-        border:1px solid #fc8381bd;
-        border-radius: 2em;
-        position:relative;
-        top:-3em;
-        left:4.3em;
-        background: rgba(255, 255, 255, 0.302);
-        padding:1em;
+        padding-top: 3em;
         
     }
-    .reviews ul {
-        text-align:center;
-    } 
-    .reviews .profession {
-        font-size:0.9em;
-        line-height: 1em;
-        color:#eee;
-    }
-    .reviews .name {
-        font-size:1.5em;
-        color:#000;
-    }
-    
-    .style1 {
-        width:99%;
-        height:20vh;
-        margin:auto;
-        background: purple;
-        clip-path:polygon(80% 0, 106% 115%, 89% -82%);
-    }
-    .style2 {
-        width:99%;
-        height:20vh;
-        margin:auto;
-        background: purple;
-        clip-path: polygon(0 58%, 0 0%, 23% 105%, 6% 99%);
 
-    } 
-
-    .brief-statment {
-        text-align: left;
-        
-        
-        font-size:1.7em;
-    }
-    .statment p {
-        font-size: 1.3em;
-        width:70%;
+   .review1 p , .review2 p ,.review3 p{
+        width:60%;
+        margin-inline:auto;
+        margin-top:1em;
+        font-size:1.1em;
         /* border:1px solid #000; */
+        
     }
 
-    .social-media ul {
-        /* border:1px solid #000; */
-        margin-block:0.5em;
-        padding-inline:none;
-        display:flex;
-        justify-content: center;
-        gap:1em;
-    }
     
     
 
-}
 
-@media screen and (min-width:1300px) {
-    .about2 {
-        left:9.3em;
-    }
-
-    .review2 .statment {
-        margin:auto;
-    }
     
-
-    .review2 .statment::after {
-        content:"\201c";
-        position:absolute;
-        top:180px;
-        left:75%;
-        font-size:6.5rem;
-        color:#fc8381bd;
-    }
 }
 
 /* end of media query */
@@ -646,6 +526,14 @@ nav {
     color:#fff;
 }
 
+
+
+
+
+
+
+
+
 /* media query for benefits section */
 @media  screen and (min-width:795px) {
   
@@ -714,8 +602,7 @@ nav {
 
 .features-section {
     width:100%;
-    height:250vh;
-    margin-bottom:0.1em;
+    height:270vh;
     overflow: hidden;
     
 
@@ -837,56 +724,139 @@ nav {
 
 
 
-
 .action {
     width:100%;
-    height:70vh;
-
+    height:89vh;
 
     display:flex;
     flex-direction:column;
+    justify-content:center;
     align-items: center;
-    justify-content: center;
+    
+    background-color: rgba(233, 233, 233, 0.981);
+    border-block-start: 1px solid rgba(0, 0, 0, 0.489);
+    
+   
 
-
-    border:1px solid #000;
-
+    
 }
 
-
 .action h1 {
-    border:1px solid blue;
+    width:60%;
+    text-align: center;
+    padding:0.7rem;
+    margin-bottom:1.5rem;
+
+    border-bottom:2.5px solid rgb(160, 157, 157);
+
 }
 
 .action p {
-    border:1px solid  red;
+    width:55%;
+    padding: 1.5rem;
+    /* border:2px solid #000; */
+    font-size:1.2rem;
+
 }
 
 .contact {
-    border:1px solid #000;
-    padding:50px;
+    width:100%;
+    margin-block:1rem;
+
+    /* border:2.5px solid rgb(160, 157, 157); */
+
+    display:flex;
+    justify-content:center;
+    gap:2.2em;
 }
 
-.contact .phone-section {
-    border:1px solid blue;
+.phone-section {
+    width:max-content;
+    height:max-content;
 
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:1.2em;
+
+    /* border:5px solid #1247ca; */
 }
 
-.contact .email-section {
-    border:1px solid red;
+.email-section {
+    width:max-content;
+    height:max-content;
 
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:1.2em;
+
+    /* border:5px solid #783cba; */
+}
+
+.fa-phone , .fa-envelope {
+    font-size:1.85rem;
+    color:#645e5e;
+}
+
+.contact a {
+    font-size:1.07rem;
+    text-decoration: none;
+    color:#000;  
+}
+  
+.contact a:hover {
+    color:#fa7a7b;
+}
+
+@media screen and (min-width:750px) {
+    .action {
+        height:75vh;
+    }
+
+    .contact a {
+        font-size: 1.1rem;
+    }
+
+    .contact {
+        padding-left: none;
+        gap:3em;
+    }
+}
+  
+    
+
+
+
+footer {
+    width: 100%;
+    height:10vh;
+    background: #fc8381;
+
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:0.6rem;
+
+
+    
+}
+
+footer .fa-envelope, .fa-magic {
+    margin-right:0.5em;
+    font-size:1.2rem;
+    color:#000;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+@media screen and (min-width:750px) {
+    footer {
+            
+        height: 5vh; 
+        flex-direction:row;
+        gap:3rem;
+    }
+}
