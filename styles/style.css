@@ -37,7 +37,9 @@ body {
 nav {
     width:100%;
     margin:0 auto;
-
+    
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
     justify-content: space-between;
 
@@ -95,6 +97,8 @@ nav {
 
 
 #check:checked ~ .links {
+   display:-webkit-box;
+   display:-ms-flexbox; 
    display:flex;
    flex-flow: column nowrap;
    justify-content: center;
@@ -134,6 +138,9 @@ nav {
     }
     
     ul.links {
+
+        display:-webkit-box;
+        display:-ms-flexbox;
         display:flex;
         justify-content: space-around;
         margin-right:15mm;
@@ -168,6 +175,9 @@ nav {
 
 @media screen and (max-width:795px) {
     .links {
+
+        display:-webkit-box;
+        display:-ms-flexbox;
         display:flex;
         flex-flow: column nowrap;
         justify-content: center;
@@ -240,13 +250,22 @@ nav {
 }
 
 .value-proposition main > p {
-    font-size:2em;
+    font-size:2.1em;
+
+    width:-webkit-max-content;
+    width:-moz-max-content;
+    width:max-content;
+    margin:auto;
 }
 .value-proposition main > span {
     font-weight: 290;
-    font-size:2.6rem;
+    font-size:2.4rem;
     display:block;
-    text-align: center;
+    
+    width:-webkit-max-content;
+    width:-moz-max-content;
+    width:max-content;
+    margin:auto;
 }
 
 .value-proposition aside  {
@@ -257,14 +276,12 @@ nav {
 
 .call-to-action {
     
-    margin-inline:auto;
-    padding:0.5em;
-
-
     width:-webkit-max-content;
     width:-moz-max-content;
     width:max-content;
-
+    margin-inline:auto;
+    padding:0.5em;
+    
     display: block;
     
     font-size: 2em;
@@ -332,7 +349,9 @@ nav {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-
+    
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
     flex-direction:column;
     justify-content:center;
@@ -428,6 +447,9 @@ nav {
 
 
 .person1 ul , .person2 ul , .person3 ul {
+
+    display:-webkit-box;
+    display:-ms-flexbox;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -437,7 +459,9 @@ nav {
     /* border:1px solid #000; */
     margin-block:0.5em;
     padding-inline:1.35em;
-
+    
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
     justify-content: center;
     gap:1em;
@@ -495,7 +519,8 @@ nav {
     background-position:center;
     background-repeat: no-repeat;
 
-
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -520,6 +545,10 @@ nav {
      width:85%;
      position:relative;
      padding:1em;
+
+
+     display:-webkit-box;
+     display:-ms-flexbox;
      display: flex;
      flex-direction: column;
      
@@ -540,6 +569,9 @@ nav {
 }
 
 .benefit1 ,.benefit2, .benefit3, .benefit4 {
+
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
     gap:1em;
     margin-block:1.2em;
@@ -644,7 +676,8 @@ nav {
     background-position:center;
 
 
-
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
     flex-direction:column;
     align-items: center;
@@ -691,6 +724,8 @@ nav {
     height:max-content;
     margin-inline:auto;
     margin-block:2em;
+
+    display:-ms-grid;
     display:grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4,1fr);
@@ -718,7 +753,8 @@ nav {
     border-radius:6px;
     /* box-shadow: 1px 1px 20px 20px #eee; */
 
-
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
     flex-direction:column;
     align-items:center;
@@ -751,8 +787,7 @@ nav {
     }
     .features {
         grid-template-columns: 1fr 1fr;
-        row-gap: 0.4em;
-        column-gap: 0.4em;
+        grid-gap:0.5em;
     }
 }
 
@@ -776,7 +811,9 @@ nav {
 .action {
     width:100%;
     height:89vh;
-
+    
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
     flex-direction:column;
     justify-content:center;
@@ -813,7 +850,9 @@ nav {
     margin-block:1rem;
 
     /* border:2.5px solid rgb(160, 157, 157); */
-
+    
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
     justify-content:center;
     gap:2.2em;
@@ -822,7 +861,9 @@ nav {
 .phone-section {
     width:max-content;
     height:max-content;
-
+    
+    display:-webkit-box;
+    display: -ms-flexbox;
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -835,7 +876,9 @@ nav {
 .email-section {
     width:max-content;
     height:max-content;
-
+    
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -883,7 +926,10 @@ footer {
     width: 100%;
     height:10vh;
     background: #fc8381;
+    
 
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
     flex-direction: column;
     justify-content: center;
