@@ -44,6 +44,7 @@ nav {
     background: #fff;
     box-shadow: 0px -28px 20px 26px rgb(154 214 243);
     z-index:3;
+
 }
 .logo {
     order:1;
@@ -85,7 +86,7 @@ nav {
 }
 #check:checked ~ .links a {
     text-decoration: none;
-    font-size:1.5rem;
+    font-size:1.35rem;
     color:white;
 }
 #check:checked ~ .links a:hover {
@@ -98,13 +99,18 @@ nav {
    flex-flow: column nowrap;
    justify-content: center;
    align-items: center;
-   position:fixed;
-   top:8vh;
+
+
+   position:absolute;
+   top:0;
    left:0;
-   width:100%;
-   height:calc(100vh - 8vh);
+
+
+   width:50%;
+   height:100vh;
    margin:0 auto;
-   background:rgb(64 162 227);
+   background-color:rgba(19, 37, 49, 0.854);
+
    z-index:4;
 
 }
@@ -166,12 +172,18 @@ nav {
         flex-flow: column nowrap;
         justify-content: center;
         align-items: center;
-        position:fixed;
-        top:8vh;
+
+
+        position:absolute;
+        top:0vh;
         left:-100%;
-        width:100%;
-        height:calc(100vh - 8vh);
-        background:rgb(64 ,162 ,227);
+
+
+        width:50%;
+        height:100vh;
+        /* background:rgb(64 ,162 ,227); */
+        background-color:rgba(19, 37, 49, 0.854);
+
         transition:.5s ease-in-out;
         z-index:3;
     }
@@ -182,7 +194,7 @@ nav {
     }
     .links a {
         text-decoration: none;
-        font-size:1.5rem;
+        font-size:1.35rem;
         color:white;
     }
     .links a:hover {
@@ -205,6 +217,10 @@ nav {
     background-image: url("../images/bg2.jpg");
     background-position: center;
     background-repeat: no-repeat;
+
+
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
     background-size: cover;
 
 
@@ -227,7 +243,7 @@ nav {
     font-size:2em;
 }
 .value-proposition main > span {
-    font-weight: 270;
+    font-weight: 290;
     font-size:2.6rem;
     display:block;
     text-align: center;
@@ -242,8 +258,12 @@ nav {
 .call-to-action {
     
     margin-inline:auto;
-    width:max-content;
     padding:0.5em;
+
+
+    width:-webkit-max-content;
+    width:-moz-max-content;
+    width:max-content;
 
     display: block;
     
@@ -253,6 +273,12 @@ nav {
     color:black;
     border:1px solid #000;
     border-radius: 7px;
+
+    -webkit-transition: ease-in-out .5s;
+    -moz-transition: ease-in-out .5s;
+    -o-transition: ease-in-out .5s;
+
+    
     transition: ease-in-out .5s;
 
 } 
