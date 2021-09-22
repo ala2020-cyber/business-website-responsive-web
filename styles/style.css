@@ -13,7 +13,6 @@
 
 html {
     overflow-x: hidden;
-    
 }
 
 html::-webkit-scrollbar {
@@ -29,24 +28,16 @@ html::-webkit-scrollbar-thumb {
     border-radius: 5px;
 }
 
-
-body {
-    overflow:hidden;
-}
-
 nav {
     width:100%;
     margin:0 auto;
-    
-    display:-webkit-box;
-    display:-ms-flexbox;
+
     display:flex;
     justify-content: space-between;
 
     background: #fff;
     box-shadow: 0px -28px 20px 26px rgb(154 214 243);
     z-index:3;
-
 }
 .logo {
     order:1;
@@ -88,7 +79,7 @@ nav {
 }
 #check:checked ~ .links a {
     text-decoration: none;
-    font-size:1.35rem;
+    font-size:1.5rem;
     color:white;
 }
 #check:checked ~ .links a:hover {
@@ -97,24 +88,17 @@ nav {
 
 
 #check:checked ~ .links {
-   display:-webkit-box;
-   display:-ms-flexbox; 
    display:flex;
    flex-flow: column nowrap;
    justify-content: center;
    align-items: center;
-
-
-   position:absolute;
-   top:0;
+   position:fixed;
+   top:8vh;
    left:0;
-
-
-   width:50%;
-   height:100vh;
+   width:100%;
+   height:calc(100vh - 8vh);
    margin:0 auto;
-   background-color:rgba(19, 37, 49, 0.854);
-
+   background:rgb(64 162 227);
    z-index:4;
 
 }
@@ -138,9 +122,6 @@ nav {
     }
     
     ul.links {
-
-        display:-webkit-box;
-        display:-ms-flexbox;
         display:flex;
         justify-content: space-around;
         margin-right:15mm;
@@ -175,25 +156,16 @@ nav {
 
 @media screen and (max-width:795px) {
     .links {
-
-        display:-webkit-box;
-        display:-ms-flexbox;
         display:flex;
         flex-flow: column nowrap;
         justify-content: center;
         align-items: center;
-
-
-        position:absolute;
-        top:0vh;
+        position:fixed;
+        top:8vh;
         left:-100%;
-
-
-        width:50%;
-        height:100vh;
-        /* background:rgb(64 ,162 ,227); */
-        background-color:rgba(19, 37, 49, 0.854);
-
+        width:100%;
+        height:calc(100vh - 8vh);
+        background:rgb(64 ,162 ,227);
         transition:.5s ease-in-out;
         z-index:3;
     }
@@ -204,7 +176,7 @@ nav {
     }
     .links a {
         text-decoration: none;
-        font-size:1.35rem;
+        font-size:1.5rem;
         color:white;
     }
     .links a:hover {
@@ -227,10 +199,6 @@ nav {
     background-image: url("../images/bg2.jpg");
     background-position: center;
     background-repeat: no-repeat;
-
-
-    -webkit-background-size:cover;
-    -moz-background-size:cover;
     background-size: cover;
 
 
@@ -250,22 +218,13 @@ nav {
 }
 
 .value-proposition main > p {
-    font-size:2.1em;
-
-    width:-webkit-max-content;
-    width:-moz-max-content;
-    width:max-content;
-    margin:auto;
+    font-size:2em;
 }
 .value-proposition main > span {
-    font-weight: 290;
-    font-size:2.4rem;
+    font-weight: 270;
+    font-size:2.6rem;
     display:block;
-    
-    width:-webkit-max-content;
-    width:-moz-max-content;
-    width:max-content;
-    margin:auto;
+    text-align: center;
 }
 
 .value-proposition aside  {
@@ -276,12 +235,10 @@ nav {
 
 .call-to-action {
     
-    width:-webkit-max-content;
-    width:-moz-max-content;
-    width:max-content;
     margin-inline:auto;
+    width:max-content;
     padding:0.5em;
-    
+
     display: block;
     
     font-size: 2em;
@@ -290,12 +247,6 @@ nav {
     color:black;
     border:1px solid #000;
     border-radius: 7px;
-
-    -webkit-transition: ease-in-out .5s;
-    -moz-transition: ease-in-out .5s;
-    -o-transition: ease-in-out .5s;
-
-    
     transition: ease-in-out .5s;
 
 } 
@@ -349,9 +300,7 @@ nav {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    
-    display:-webkit-box;
-    display:-ms-flexbox;
+
     display:flex;
     flex-direction:column;
     justify-content:center;
@@ -447,9 +396,6 @@ nav {
 
 
 .person1 ul , .person2 ul , .person3 ul {
-
-    display:-webkit-box;
-    display:-ms-flexbox;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -459,9 +405,7 @@ nav {
     /* border:1px solid #000; */
     margin-block:0.5em;
     padding-inline:1.35em;
-    
-    display:-webkit-box;
-    display:-ms-flexbox;
+
     display:flex;
     justify-content: center;
     gap:1em;
@@ -511,16 +455,14 @@ nav {
 
 .benefits-section {
     width:100%;
-    height:100vh;
+    height:135vh;
     margin-block-end:0.1em;
 
     background-image: url("../images/design4.jpg");
     background-size: cover;
     background-position:center;
-    background-repeat: no-repeat;
 
-    display:-webkit-box;
-    display:-ms-flexbox;
+
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -545,10 +487,6 @@ nav {
      width:85%;
      position:relative;
      padding:1em;
-
-
-     display:-webkit-box;
-     display:-ms-flexbox;
      display: flex;
      flex-direction: column;
      
@@ -569,9 +507,6 @@ nav {
 }
 
 .benefit1 ,.benefit2, .benefit3, .benefit4 {
-
-    display:-webkit-box;
-    display:-ms-flexbox;
     display:flex;
     gap:1em;
     margin-block:1.2em;
@@ -667,37 +602,21 @@ nav {
 
 .features-section {
     width:100%;
-    height:100vh;
-    overflow-y: scroll;
-    overflow-x: hidden;
+    height:270vh;
+    overflow: hidden;
+    
 
     background-image: url("../images/bg3.jpg");
     background-size: cover;
     background-position:center;
 
 
-    display:-webkit-box;
-    display:-ms-flexbox;
+
     display:flex;
     flex-direction:column;
     align-items: center;
 
     /* border:1px solid greenyellow; */
-}
-
-
-
-.features-section::-webkit-scrollbar {
- width:0.6rem;
-}
-.features-section::-webkit-scrollbar-track {
-    background-color:#000;
-
-}
-
-.features-section::-webkit-scrollbar-thumb {
-    background-color:#fff;
-    border-radius: 6px;
 }
 
 
@@ -724,8 +643,6 @@ nav {
     height:max-content;
     margin-inline:auto;
     margin-block:2em;
-
-    display:-ms-grid;
     display:grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4,1fr);
@@ -753,8 +670,7 @@ nav {
     border-radius:6px;
     /* box-shadow: 1px 1px 20px 20px #eee; */
 
-    display:-webkit-box;
-    display:-ms-flexbox;
+
     display:flex;
     flex-direction:column;
     align-items:center;
@@ -783,11 +699,11 @@ nav {
      
     .features-section {
         height:150vh;
-        overflow: visible;
     }
     .features {
         grid-template-columns: 1fr 1fr;
-        grid-gap:0.5em;
+        row-gap: 0.4em;
+        column-gap: 0.4em;
     }
 }
 
@@ -811,9 +727,7 @@ nav {
 .action {
     width:100%;
     height:89vh;
-    
-    display:-webkit-box;
-    display:-ms-flexbox;
+
     display:flex;
     flex-direction:column;
     justify-content:center;
@@ -850,9 +764,7 @@ nav {
     margin-block:1rem;
 
     /* border:2.5px solid rgb(160, 157, 157); */
-    
-    display:-webkit-box;
-    display:-ms-flexbox;
+
     display:flex;
     justify-content:center;
     gap:2.2em;
@@ -861,9 +773,7 @@ nav {
 .phone-section {
     width:max-content;
     height:max-content;
-    
-    display:-webkit-box;
-    display: -ms-flexbox;
+
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -876,9 +786,7 @@ nav {
 .email-section {
     width:max-content;
     height:max-content;
-    
-    display:-webkit-box;
-    display:-ms-flexbox;
+
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -926,10 +834,7 @@ footer {
     width: 100%;
     height:10vh;
     background: #fc8381;
-    
 
-    display:-webkit-box;
-    display:-ms-flexbox;
     display:flex;
     flex-direction: column;
     justify-content: center;
