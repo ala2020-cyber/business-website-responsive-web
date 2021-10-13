@@ -17,7 +17,12 @@
 }
 
 html {
-    overflow-x: hidden;
+    overflow: hidden;
+}
+
+.showing {
+    overflow-x:hidden;
+    overflow-y:scroll;
 }
 
 html::-webkit-scrollbar {
