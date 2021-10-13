@@ -48,6 +48,8 @@ html::-webkit-scrollbar-thumb {
 
     display:grid;
     place-items: center;
+    overflow-y:hidden;
+    z-index:1000;
 }
 
 #circle {
