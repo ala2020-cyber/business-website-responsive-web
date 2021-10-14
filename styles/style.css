@@ -53,9 +53,12 @@ html::-webkit-scrollbar-thumb {
 
     display:grid;
     place-items: center;
-    overflow-y:hidden;
-    z-index:1000;
 }
+
+ .loding-place{
+   position:relative;  
+   display:none;
+} 
 
 #circle {
     width: 40px;
@@ -98,7 +101,7 @@ html::-webkit-scrollbar-thumb {
 
 
 
-nav {
+#nav-bar {
     width:100%;
     margin:0 auto;
     
@@ -195,7 +198,7 @@ nav {
         display:none;
     }
     
-    ul.links {
+    .links {
         display:flex;
         justify-content: space-around;
         margin-right:15mm;
