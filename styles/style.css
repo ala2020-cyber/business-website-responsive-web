@@ -379,153 +379,148 @@ html::-webkit-scrollbar-thumb {
 
 
 
-.reviews {
-
-    width:100%;
-    margin-block-end:0.1em;
-
-    background-color: rgba(233, 233, 233, 0.981);
 
 
-    display:-webkit-box;
-    display:-ms-flexbox;
+
+
+
+
+
+
+
+
+
+
+/* about us section  */
+#about-us {
     display:flex;
     flex-direction:column;
     justify-content:center;
     align-items:center;
-    gap:3.3em;
-
+    gap:2em;
 }
-.review1,.review2,.review3 {
-    border:2.4px solid rgba(21, 133, 219, 0.481);
-    border-radius:2em;
-    padding:1em;
-    width:80%;
-    margin:auto;
-
-    display:flex;
-    gap:1em;
-    
-}
-.review1 a ,.review2 a ,.review3 a {
-    text-decoration:none;
-    color:#000;
-}
-.review1 li , .review2 li , .review3 li {
-    list-style:none;
-} 
-
-.reviews h2 {
+    #about-us h2 {
+    text-align: center;
     font-size:3rem;
-}
-.reviews h2 span {
-   display:block;
-   font-size:1.5rem;
-
-   text-align: center;
-   color:rgba(2, 1, 1, 0.802);
-}
-
-.reviews img {
-    border-radius: 50%;
-}
-
-.statment p {
-    margin-top:1em;
-    font-size:1.1em;
-    
-}
-
-
-.brief-statment {
-    text-align:center;
-    font-family: ' amita', cursive;
-    font-size:1.3em;
-}
-
-.style1 {
-    width:99%;
-    height:20vh;
-    margin:auto;
+    }
+    #about-us h2 span {
+    display:block;
+    font-size:1.5rem;
+    color:rgba(2, 1, 1, 0.802);
+    }
+    .person {    
+        width:50%;
+        height: max-content;
+        position: relative;
+    }
+        .about-image {
+            width:90%;
+            height:90%;
+            border-radius: 50%;
+        }
+        .social-media {
+            display:flex;
+            gap:1em;
+        }        
+        .social-media >* {
+            text-decoration:none;
+            color:#000;
+            list-style:none;
+        }
+        .social-media a{
+            font-size:1.5em;
+            color:#000; 
+            transition:0.3ms ease-in;
+        }
+        .social-media a:hover {
+            color:rgb(11, 122, 240)
+        }
+    .statment {
+        padding: 40px 0 0;
+        position:relative;
+    }
+    .statment p {
+        margin-top:1em;
+        font-size:1.1em;
+    }
+    .statment::after{
+        content:"\201d";
+        color:rgb(10, 65, 124);
+        font-size:8em;
+        position:absolute;
+        top:120px;
+    }
+.clip {
+    width:100%;
+    height:10vh;
     background: rgb(26, 115, 209);
+}
+.style1 {
     clip-path:polygon(80% 0, 106% 115%, 89% -82%);
 }
 .style2 {
-    width:99%;
-    height:20vh;
-    margin:auto;
-    background: rgb(26, 115, 209);
     clip-path: polygon(0 58%, 0 0%, 23% 105%, 6% 99%);
-
-} 
-
-.statment {
-    padding-top: 3em;
-
+}
+.review{
+    border:2.4px solid rgba(21, 133, 219, 0.481);
+    border-radius:5em;
+    padding:1.6em;
+    width:75%;
+    margin:auto;
+    display:flex;
+    
 }
 
-.review1 p::after , .review3 p::after {
-        content:"\201d";
-        color:rgb(26, 115, 209);
-        font-size:5em;
-        float:right;
-        
-        
-}
-
-
-
-.review2 p::after {
-    content:"\201c";
-    color:rgb(26, 115, 209);
-    font-size:5em;
-    float:right;
-}
-
-
-.person1 ul , .person2 ul , .person3 ul {
-    display:-webkit-box;
-    display:-ms-flexbox;
-    display: flex;
+.about-person-wrapper {
+    background-color: rgba(255, 255, 255, 0.261);
+    display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-.social-media ul {
-    /* border:1px solid #000; */
-    margin-block:0.5em;
-    padding-inline:1.35em;
-    
-    display:-webkit-box;
-    display:-ms-flexbox;
-    display:flex;
-    justify-content: center;
-    gap:1em;
-}
-
-
-.social-media i {
-
-    font-size:1.1em;
-    color:#000;
-
-    -webkit-transition:.2s ease-in-out;
-    -o-transition:.2s ease-in-out;    
+    border-radius:50%;
+    position:absolute;
+    top:0px;
     transition:.2s ease-in-out;
+    opacity: 0;
 }
-.social-media i:hover {
-    color:rgb(210, 70, 210);
+.image-detail1 {
+    width:253px;
+    height: 253px;
+    top:0px;
+    left: 0px;
 }
+.image-detail2 {
+    width:288px;
+    height: 288px;
+}
+.image-detail3 {
+    width:224px;
+    height: 224px;
+}
+
+.about-person-wrapper:hover{
+    opacity:1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* media query for reviews  */
 
 
 @media screen and (min-width:750px) {
 
-    .statment {
-        padding-top: 3em;
-        
-    }
+
 
    .review1 p , .review2 p ,.review3 p{
         width:60%;
@@ -534,7 +529,7 @@ html::-webkit-scrollbar-thumb {
         font-size:1.1em;
         /* border:1px solid #000; */
         
-    }
+    } 
 
     
     
