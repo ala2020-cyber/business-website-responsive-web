@@ -409,22 +409,17 @@ html::-webkit-scrollbar-thumb {
     color:rgba(2, 1, 1, 0.802);
     }
     .person {    
-        width:50%;
-        height: max-content;
+        width:40%;
         position: relative;
+        display:grid;
+        place-items: center;
     }
-        .about-image {
-            width:90%;
-            height:90%;
-            border-radius: 50%;
-        }
         .social-media {
             display:flex;
             gap:1em;
         }        
         .social-media >* {
             text-decoration:none;
-            color:#000;
             list-style:none;
         }
         .social-media a{
@@ -432,23 +427,26 @@ html::-webkit-scrollbar-thumb {
             color:#000; 
             transition:0.3ms ease-in;
         }
-        .social-media a:hover {
-            color:rgb(11, 122, 240)
+        .fa-twitter:hover {
+            color:rgb(11, 148, 240);
+        }
+        .fa-instagram:hover {
+            color:rgb(197, 15, 197);
         }
     .statment {
-        padding: 40px 0 0;
+        width:max-content;
+        padding:0 2rem;
         position:relative;
+    }
+    .title-statment {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color:rgb(10, 65, 124);
     }
     .statment p {
         margin-top:1em;
-        font-size:1.1em;
-    }
-    .statment::after{
-        content:"\201d";
-        color:rgb(10, 65, 124);
-        font-size:8em;
-        position:absolute;
-        top:120px;
+        font-size:1.2rem;
+        width:30vw;
     }
 .clip {
     width:100%;
@@ -465,42 +463,57 @@ html::-webkit-scrollbar-thumb {
     border:2.4px solid rgba(21, 133, 219, 0.481);
     border-radius:5em;
     padding:1.6em;
-    width:75%;
+    width:70%;
     margin:auto;
     display:flex;
-    
+    justify-content: center;
 }
 
 .about-person-wrapper {
-    background-color: rgba(255, 255, 255, 0.261);
+    width:max-content;
+    height:max-content;
+    background-color:rgb(213, 228, 227);
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius:50%;
-    position:absolute;
-    top:0px;
-    transition:.2s ease-in-out;
-    opacity: 0;
-}
-.image-detail1 {
-    width:253px;
-    height: 253px;
-    top:0px;
-    left: 0px;
-}
-.image-detail2 {
-    width:288px;
-    height: 288px;
-}
-.image-detail3 {
-    width:224px;
-    height: 224px;
+    padding:55px;
+    position:relative;
 }
 
-.about-person-wrapper:hover{
-    opacity:1;
+.about-person-wrapper::before {
+    content:"";
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position:absolute;
+    top:0;
+    width:100%;
+    height:100%;
+    border-radius: 50%;
 }
+.about-person-wrapper:hover::before {
+    display:none;
+}
+.image-detail1::before {
+    background-image: url("https://i0.wp.com/www.financialafrik.com/wp-content/uploads/2021/01/Elon-musk-plus-riche-du-monde-pandemique.jpg?fit=1200%2C800&ssl=1");
+}
+.image-detail2::before{
+    background-image: url("https://img-0.journaldunet.com/PujDkZ9YAmFXrZxdCBLKNgiEnRg=/1500x/smart/45776488e7eb4b8080d4ad6e0da4bd74/ccmcms-jdn/11517282.jpg");
+}
+.image-detail3::before {
+    background-image: url("https://m-cdn.phonearena.com/images/article/131223-wide-two_1200/Apple-CEO-Tim-Cook-says-he-might-leave-sometime-over-the-next-ten-years.jpg");
+}
+
+.name {
+    font-size:1.65rem;
+}
+.profession {
+    font-size:1rem;
+    font-weight: 300;
+}
+
 
 
 
