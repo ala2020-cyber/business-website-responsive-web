@@ -383,7 +383,15 @@ html::-webkit-scrollbar-thumb {
 
 
 
-
+.description{
+    text-align: center;
+    font-size:3rem;
+}
+.description span {
+    display:block;
+    font-size:1.5rem;
+    color:rgba(2, 1, 1, 0.802);
+}
 
 
 
@@ -399,15 +407,6 @@ html::-webkit-scrollbar-thumb {
     align-items:center;
     gap:2em;
 }
-    #about-us h2 {
-    text-align: center;
-    font-size:3rem;
-    }
-    #about-us h2 span {
-    display:block;
-    font-size:1.5rem;
-    color:rgba(2, 1, 1, 0.802);
-    }
     .person {    
         width:40%;
         position: relative;
@@ -518,121 +517,48 @@ html::-webkit-scrollbar-thumb {
 
 
 
-
-
-
-
-
-
-
-
-
-
-/* media query for reviews  */
-
-
-@media screen and (min-width:750px) {
-
-
-
-   .review1 p , .review2 p ,.review3 p{
-        width:60%;
-        margin-inline:auto;
-        margin-top:1em;
-        font-size:1.1em;
-        /* border:1px solid #000; */
-        
-    } 
-
-    
-    
-
-
-    
-}
-
-/* end of media query */
-
-
-
-
-.benefits-section {
+/* benefits section  */
+#link-benefits {
     width:100%;
-    height:135vh;
+    height:max-content;
     margin-block-end:0.1em;
-
-    background-image: url("../images/design4.jpg");
-    background-size: cover;
+    color:#fff;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtypdf8TmFbkpgmsqUxyF0GfGxhP8IQUJyDlqPNEVppJ16z88NUi9YAnuVwUfVf6WqpSg&usqp=CAU");
+    background-size:40%;
+    background-color:rgb(23,4,32);
     background-position:center;
     background-repeat: no-repeat;
+    padding:4rem 0 ;
+}
 
-    
-    display:-webkit-box;
-    display:-ms-flexbox;
+#link-benefits span {
+    color:rgb(192, 186, 186);
+}
+
+
+.benefit{
     display:flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    gap:3.2em;
-
-
-}
-
-.benef-desc  h1 {
-    font-size:3.1rem;
-    color:#fff;
-}
-.benef-desc h1 span {
-   display:block;
-   font-size:2rem;
-   text-align: center;
-   color:#fff;
-}
-
- .benefits {
-     width:85%;
-     position:relative;
-     padding:1em;
-     display: flex;
-     flex-direction: column;
-     
-    
-}
-.benefits::before {
-    content:'';
-    position:absolute;
-
-    background-color:#000;
-    width:100%;
-    height:100%;
-    opacity:0.07;
-    border:10px solid #fff;
-    border-radius: 2rem;
-    transform: translate(-20px,-2px);
-
-}
-
-.benefit1 ,.benefit2, .benefit3, .benefit4 {
-
-    display:-webkit-box;
-    display:-ms-flexbox;
-    display:flex;
     gap:1em;
-    margin-block:1.2em;
+    margin:1.2em 0;
+    padding:20px;
+    border-radius:16px;
+    border:4px solid #d4d4d4;
   
 }
 
-.benefits .far {
-    line-height: 1.3em;
-    color:greenyellow;
-    font-size:2.5em;
+.benefit:hover {
+    background:rgba(8, 23, 233, 0.481);
 }
 
+
+.benefits {
+    width:70%;
+    margin: auto;
+    padding:1em;
+}
 .benefits h1 {
-    
-    font-size:2.2em;
-    font-weight: bolder;
-    color:#fff;
+    font-size:2rem;
 }
 
 
@@ -642,72 +568,7 @@ html::-webkit-scrollbar-thumb {
 
 
 
-
-/* media query for benefits section */
-@media  screen and (min-width:795px) {
-  
-    .benefits h1 {
-      font-size:2.6em;
-  }
-
-
-  .benef-desc h1 {
-      font-size:3.5rem;
-  }
-
-}
-
-@media screen and (min-width:900px) {
-    .benefits {
-        position:relative;
-        top:-13vh;
-        left:25vw;
-    
-
-        
-    }
-    .benef-desc h1  {
-        font-size:2.7rem;
-        position:relative;
-        top:30vh;
-        left:-25vw;
-        
-    
-    }
-
-
-    .benef-desc h1 span {
-       font-size:1.5rem;
-    
-    }
-    
-    .benefits {
-        width:50%;
-        padding:0;
-    }
-     
-    .benefits-section {
-        height:100vh;
-    }
-
-}
-
-@media screen and (min-width:1300px) {
-    .benef-desc h1 {
-        font-size:3.1rem;
-    }
-    .benef-desc span {
-        font-size:2rem;
-    }
-
-    .benefits::before {
-        width:75%;
-    }
-}
-
-/* end of benefits section */
-
-
+/* features section  */
 
 .features-section {
     width:100%;
