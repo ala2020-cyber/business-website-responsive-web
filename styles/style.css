@@ -512,6 +512,7 @@ nav {
 .feature{
     flex:1;
     padding:1em 0;
+    margin:1.2em 0;
     background:rgba(255, 255, 255, 0.563);
     border:2px solid #c7c5c5;
     border-radius:6px;
