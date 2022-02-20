@@ -101,21 +101,16 @@ html::-webkit-scrollbar-thumb {
 
 
 
-#nav-bar {
-    width:100%;
+nav {
+    width:70%;
     margin:0 auto;
-    
-    display:-webkit-box;
-    display:-ms-flexbox;
     display:flex;
     justify-content: space-between;
-
-    background: #fff;
-    box-shadow: 0px -28px 20px 26px rgb(154 214 243);
-    z-index:3;
+    color:#fff;
 }
-.logo {
-    order:1;
+.logo img{
+    width:33%;
+    margin-top:1em;
 }
 
 
@@ -124,9 +119,6 @@ html::-webkit-scrollbar-thumb {
   }
 
 
-.menu {
-     order:3;
-}
 
 
 .fa-bars {
@@ -203,7 +195,6 @@ html::-webkit-scrollbar-thumb {
         justify-content: space-around;
         margin-right:15mm;
         line-height: 15mm;
-        order:2;
   
     }
 
@@ -215,18 +206,6 @@ html::-webkit-scrollbar-thumb {
     .links a {color:#000; text-decoration: none;font-size:1.1rem;}
     .links a:hover {color:#fc8481;} 
 
-    .lets-talk {
-        border:1px solid #000;
-        padding:0.2em;
-        border-radius: 7px;
-        transition: ease-in-out .5s;
-        
-    }
-    .lets-talk:hover {
-         font-size:1.5em;
-         border:1px solid #fc8481;
-    }
-    
     
 
 }
@@ -269,33 +248,30 @@ html::-webkit-scrollbar-thumb {
 } 
 /* end of media query */
 
-.value-proposition {
-    width:100%;
+
+
+
+
+
+
+#value-proposition {
     height:100vh;
     margin-bottom:0.1em;
-
-    background-image: url("../images/bg2.jpg");
+    /* background-image: url("https://wallpaperaccess.com/full/1567679.jpg");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-
-
-
-    /* border: 1px solid rgb(0, 0, 0); */
-    
+    background-size: cover; */
+    background-color: #EEE6CE;
 }
-.value-proposition main {
+.landing-content {
+    text-align: center;
     width:max-content;
     margin-bottom: 2em;
-    margin-inline: auto;
-    /* border: 1px solid #000; */
-    padding-block:6.5em;
-
-
-
+    margin:0 auto;
+    padding:6.5em 0;
 }
 
-.value-proposition main > p {
+.landing-content p {
     font-size:2.1em;
 
     width:-webkit-max-content;
@@ -303,50 +279,29 @@ html::-webkit-scrollbar-thumb {
     width:max-content;
     margin:auto;
 }
-.value-proposition main > span {
+.landing-content span {
     font-weight: 270;
     font-size:2.55rem;
     display:block;
     
-    width:-webkit-max-content;
-    width:-moz-max-content;
-    width:max-content;
-    margin: auto;
 }
 
-.value-proposition aside  {
-    /* border: 1px solid rgb(0, 0, 0); */
-    margin-top:0.5em;
-
-}
 
 .call-to-action {
-    
-    margin-inline:auto;
-    width:-webkit-max-content;
-    width:-moz-max-content;
     width:max-content;
+    margin:0.5em auto 0;
     padding:0.5em;
-
     display: block;
-    
     font-size: 2em;
     text-decoration: none;
     color:black;
     border:1px solid #000;
     border-radius: 7px;
-
-    -webkit-transition: ease-in-out .5s;
-    -o-transition: ease-in-out .5s;
-    transition: ease-in-out .5s;
-
+    transition: all ease-in-out .1s;
 } 
-
 .call-to-action:hover {
- font-size:2.5em;
-
- border:none;
- background: #fff;
+    color:#fff;
+    border:1px solid #fff;
 }
 
 
@@ -355,33 +310,8 @@ html::-webkit-scrollbar-thumb {
 
 
 
-/*media query of section  value proposition  */
 
-
-
-@media screen and (min-width:750px) {
-      
-    .value-proposition main > p {
-        font-size:2.7em;
-    }
-
-}
-
-@media screen and (min-width:1100px) {
-      
-    .value-proposition main > p {
-        font-size:4.5em;
-    }
-
-}
-/* end of media query */
-
-
-
-
-
-
-
+/* components  */
 
 .description{
     text-align: center;
@@ -391,6 +321,10 @@ html::-webkit-scrollbar-thumb {
     display:block;
     font-size:1.5rem;
     color:rgba(2, 1, 1, 0.802);
+}
+
+.container {
+    padding:4rem 0;
 }
 
 
@@ -447,23 +381,12 @@ html::-webkit-scrollbar-thumb {
         font-size:1.2rem;
         width:30vw;
     }
-.clip {
-    width:100%;
-    height:10vh;
-    background: rgb(26, 115, 209);
-}
-.style1 {
-    clip-path:polygon(80% 0, 106% 115%, 89% -82%);
-}
-.style2 {
-    clip-path: polygon(0 58%, 0 0%, 23% 105%, 6% 99%);
-}
 .review{
     border:2.4px solid rgba(21, 133, 219, 0.481);
     border-radius:5em;
     padding:1.6em;
     width:70%;
-    margin:auto;
+    margin:1.2em auto;
     display:flex;
     justify-content: center;
 }
@@ -519,16 +442,13 @@ html::-webkit-scrollbar-thumb {
 
 /* benefits section  */
 #link-benefits {
-    width:100%;
     height:max-content;
-    margin-block-end:0.1em;
     color:#fff;
     background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtypdf8TmFbkpgmsqUxyF0GfGxhP8IQUJyDlqPNEVppJ16z88NUi9YAnuVwUfVf6WqpSg&usqp=CAU");
     background-size:40%;
     background-color:rgb(23,4,32);
     background-position:center;
     background-repeat: no-repeat;
-    padding:4rem 0 ;
 }
 
 #link-benefits span {
@@ -544,7 +464,7 @@ html::-webkit-scrollbar-thumb {
     padding:20px;
     border-radius:16px;
     border:4px solid #d4d4d4;
-  
+    transition: all 0.05s ease-in ;
 }
 
 .benefit:hover {
@@ -558,7 +478,7 @@ html::-webkit-scrollbar-thumb {
     padding:1em;
 }
 .benefits h1 {
-    font-size:2rem;
+    font-size:clamp(1rem,1.4rem,2rem);
 }
 
 
@@ -570,157 +490,62 @@ html::-webkit-scrollbar-thumb {
 
 /* features section  */
 
-.features-section {
-    width:100%;
-    height:100vh;
-    overflow-y:scroll;
-    overflow-x: hidden;
-    
-
-    background-image: url("../images/bg3.jpg");
-    background-size: cover;
-    background-position:center;
-    background-repeat: no-repeat;
-
-
-    display:-webkit-box;
-    display:-ms-flexbox;
-    display:flex;
-    flex-direction:column;
-    align-items: center;
-
-    /* border:1px solid greenyellow; */
-}
-
-.features-section::-webkit-scrollbar {
-    width:0.6rem;
-   }
-.features-section::-webkit-scrollbar-track {
-    background-color:rgb(11, 21, 28);
-    border-radius:5px;
-   
-}
-   
-.features-section::-webkit-scrollbar-thumb {
-    background-color:white ;
-    border-radius: 5px;
-}
-
-.fea-desc {
-    
-    padding-block:1em;
-    /* border:1px solid red; */
-
-}
-
-.fea-desc  h1 {
-    font-size:3.1rem;
-    color:#000;
-}
-.fea-desc h1 span {
-   display:block;
-   font-size:1.8rem;
-   text-align: center;
-   color:#000;
+#features-section {
+    text-align: center;
+    width:70%;
+    margin:0 auto;
 }
 .features {
-    width:-webkit-max-content;
-    width:-moz-max-content;   
-    width:max-content;
-    height:-webkit-max-content;
-    height:-moz-max-content; 
-    height:max-content;
-    margin:2em auto;
-
-
-    display:-ms-grid;
-    display:grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4,1fr);
-    grid-auto-rows: minmax(max-content, auto);
-    row-gap: 0.35em;
-    
-    
-
-    /* border:1px solid #000; */
+    margin:2em auto 0;
+    display:flex;
+    flex-wrap: wrap;
+    gap:1rem;
+    padding:2em 0;
 }
-
 
 .features h1 {
-    margin-block:1em;
-    font-size:1.5em;
+    margin:2em 0;
+    font-size:1.1rem;
 }
 
 
 
-.fea {
- 
-    padding-block:1em;
+.feature{
+    flex:1;
+    padding:1em 0;
     background:rgba(255, 255, 255, 0.563);
-    border:1px solid rgba(0, 0, 0, 0.405);
+    border:2px solid #c7c5c5;
     border-radius:6px;
-    /* box-shadow: 1px 1px 20px 20px #eee; */
-
-    
-    display:-webkit-box;
-    display:-ms-flexbox;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content: center;
-
-    -webkit-transition: ease-in-out .5s;
-    -o-transition: ease-in-out .5s;
-    transition:ease-in-out .5s;
-
-     
-
+    transition: all 0.005s ease-in ;
 }
-.fea:hover {
-    background:#fa7a7b;
-    
+.feature:hover {
+    box-shadow: 0 4px 10px  rgb(104, 102, 102),
+    4px 0 10px  rgb(104, 102, 102);
 }
 
-.fea img {
+.feature img {
+    /* width:95%; */
     border-radius: 6px;
-    cursor:pointer;
-
 }
 
 
 
 
 
-@media  screen and (min-width:800px) {
-     
-    .features-section {
-        height:150vh;
-        overflow: hidden;
-    }
-    .features {
-        grid-template-columns: 1fr 1fr;
-        row-gap: 0.4em;
-        column-gap: 0.4em;
-    }
-}
-
-
-@media  screen and (min-width:1300px) {
-
-    .features-section {
-        height:100vh;
-    }
-    
-    
-    .features {
-    
-        grid-template-columns:repeat(4,1fr) ;
-        column-gap: 0.2em;
-    }
-}
 
 
 
+
+
+
+
+
+
+
+
+
+
+/* contact section  */
 .action {
     width:100%;
     height:89vh;
