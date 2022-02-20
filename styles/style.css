@@ -118,7 +118,9 @@ nav {
     display:none;
   }
 
-
+.fas {
+    color:#000;
+}
 
 
 .fa-bars {
@@ -261,7 +263,7 @@ nav {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; */
-    background-color: #EEE6CE;
+    background-color: #eed68f;
 }
 .landing-content {
     text-align: center;
@@ -272,16 +274,13 @@ nav {
 }
 
 .landing-content p {
-    font-size:2.1em;
-
-    width:-webkit-max-content;
-    width:-moz-max-content;
+    font-size:3rem;
     width:max-content;
     margin:auto;
 }
 .landing-content span {
     font-weight: 270;
-    font-size:2.55rem;
+    font-size:2.5rem;
     display:block;
     
 }
@@ -300,8 +299,8 @@ nav {
     transition: all ease-in-out .1s;
 } 
 .call-to-action:hover {
-    color:#fff;
-    border:1px solid #fff;
+    color:#fc8481;
+    border:1px solid #fc8481;
 }
 
 
