@@ -109,23 +109,8 @@ nav {
     color:#fff;
 }
 .logo img{
-<<<<<<< Updated upstream
     width:43%;
     margin-top:1.1em;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-    max-width:40%;
-    margin-top:0.5em;
-=======
-    width:43%;
-    margin-top:1.1em;
->>>>>>> ab6e156d22a4df098f3d20d5b219512468a08d0c
-=======
-    width:43%;
-    margin-top:1.1em;
->>>>>>> ab6e156d22a4df098f3d20d5b219512468a08d0c
->>>>>>> Stashed changes
 }
 
 
@@ -219,20 +204,9 @@ nav {
         margin-inline-start: 5vw;
         list-style: none;
     } 
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-    .links a {color:#000; text-decoration: none;font-size:1.25rem;
-    font-weight: 500;}
-    .links a:hover {color:#fff;} 
-=======
-=======
->>>>>>> ab6e156d22a4df098f3d20d5b219512468a08d0c
->>>>>>> Stashed changes
+
     .links a {color:#fff; text-decoration: none;font-size:1.2rem;}
     .links a:hover {color:#fc8481;} 
->>>>>>> ab6e156d22a4df098f3d20d5b219512468a08d0c
 
     
 
@@ -261,22 +235,11 @@ nav {
     }
     .links a {
         text-decoration: none;
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
         font-size:1.2rem;
         color:#fff;
-=======
-=======
->>>>>>> ab6e156d22a4df098f3d20d5b219512468a08d0c
->>>>>>> Stashed changes
-        font-size: 1.2rem;
-        color:white;
     }
     .links a:hover {
         color:#783cba;
->>>>>>> ab6e156d22a4df098f3d20d5b219512468a08d0c
     }
     html::-webkit-scrollbar {
         width:0.55rem;
@@ -296,27 +259,8 @@ nav {
 #value-proposition {
     height:100vh;
     margin-bottom:0.1em;
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
     background-color: #d3cfcc;
     overflow: hidden;
-=======
-=======
->>>>>>> ab6e156d22a4df098f3d20d5b219512468a08d0c
->>>>>>> Stashed changes
-    background-image: url("https://images.unsplash.com/photo-1644620990884-0e6e8743f71a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
->>>>>>> ab6e156d22a4df098f3d20d5b219512468a08d0c
-=======
->>>>>>> ab6e156d22a4df098f3d20d5b219512468a08d0c
->>>>>>> Stashed changes
 }
 .landing-content {
     width:70%;
@@ -326,7 +270,6 @@ nav {
     padding:6.5em 0;
 }
 
-<<<<<<< HEAD
 .landing-title {
     font-size:clamp(25px,5vw,50px);
     font-weight: 700;
@@ -345,12 +288,10 @@ nav {
     right: -20%;
     width:50%;
     height:600%
-=======
 .landing-content p {
     font-size: 3rem;
     width:max-content;
     margin:auto;
->>>>>>> ab6e156d22a4df098f3d20d5b219512468a08d0c
 }
 .landing-content span {
     font-weight:lighter;
@@ -365,19 +306,7 @@ nav {
     margin:1em 0 0;
     padding:0.5em;
     display: block;
-<<<<<<< Updated upstream
     font-size: 1.5em;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-    font-size: 1.3em;
-=======
-    font-size: 1.5em;
->>>>>>> ab6e156d22a4df098f3d20d5b219512468a08d0c
-=======
-    font-size: 1.5em;
->>>>>>> ab6e156d22a4df098f3d20d5b219512468a08d0c
->>>>>>> Stashed changes
     text-decoration: none;
     color:#fff;
     border:1px solid #fff;
@@ -546,25 +475,11 @@ nav {
     display:flex;
     justify-content:flex-start;
     padding:20px;
-<<<<<<< HEAD
-=======
     border-radius:16px;
     border:4px solid #d4d4d4;
     background:rgba(8, 23, 233, 0.481);
     transition: all 0.05s ease-in ;
 }
-
-.benefit:hover {
-    background:transparent;
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
->>>>>>> ab6e156d22a4df098f3d20d5b219512468a08d0c
-=======
->>>>>>> ab6e156d22a4df098f3d20d5b219512468a08d0c
->>>>>>> Stashed changes
-}
-
 
 .benefits {
     width:70%;
