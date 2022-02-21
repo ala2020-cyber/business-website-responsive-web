@@ -271,7 +271,8 @@ nav {
 }
 
 .landing-title {
-    font-size:clamp(25px,5vw,50px);
+    width:max-content;
+    font-size:clamp(20px,5vw,40px);
     font-weight: 700;
     position:relative;
     z-index:1;
@@ -285,17 +286,19 @@ nav {
     position: absolute;
     z-index:-1;
     top:-62%;
-    right: -40%;
+    right:-40%;
     width:50%;
     height:700%;
 }
-.landing-content p {
-    font-size: clamp(16px,4vw,40px);
-    width:max-content;
+@media  (max-width:1080px) {
+    .landing-title::before {
+        right:0;
+        top:0;
+    }
 }
 .landing-content span {
     font-weight:lighter;
-    font-size:clamp(20px,3vw,40px);
+    font-size:clamp(20px,3.2vw,40px);
     display:block;
     
 }
@@ -303,10 +306,10 @@ nav {
 
 .call-to-action {
     width:max-content;
-    margin:1.5em 0 0;
+    margin:1.2em 0 0;
     padding:0.5em;
     display: block;
-    font-size:1.2rem;
+    font-size:clamp(18px,2vw,20px);
     text-decoration: none;
     color:#000;
     border:1px solid #000;
@@ -320,20 +323,15 @@ nav {
 
 
 
-
-
-
-
-
 /* components  */
 
 .description{
     text-align: center;
-    font-size:3rem;
+    font-size:clamp(30px,5vw,3rem);
 }
 .description span {
     display:block;
-    font-size:1.5rem;
+    font-size:clamp(16px,2.5vw,1.3rem);
     color:rgba(2, 1, 1, 0.802);
 }
 
@@ -354,12 +352,14 @@ nav {
     justify-content:center;
     align-items:center;
     gap:2em;
+    margin:0 0.7rem;
 }
     .person {    
         width:40%;
         position: relative;
         display:grid;
         place-items: center;
+        flex:1;
     }
         .social-media {
             display:flex;
@@ -382,26 +382,37 @@ nav {
         }
     .statment {
         width:max-content;
-        padding:0 2rem;
+        padding:2rem;
         position:relative;
+        flex:1;
+    }
+    @media screen and (max-width:730px) {
+        .review.statment > *{
+            text-align: center;
+        }        
     }
     .title-statment {
         font-size: 1.5rem;
         font-weight: 700;
         color:rgb(10, 65, 124);
     }
-    .statment p {
+    .content-statment{
+        display: inline-block;
         margin-top:1em;
         font-size:1.2rem;
-        width:30vw;
+        width:40vw;
+        height:fit-content;
     }
 .review{
     border:2.4px solid rgba(21, 133, 219, 0.481);
     border-radius:40px;
     padding:1.6em;
-    width:70%;
+    height:max-content;
+    width:fit-content;
     margin:0.8em auto;
+    gap:0.7em;
     display:flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
@@ -480,7 +491,7 @@ nav {
 
 .benefits {
     width:70%;
-    margin: auto;
+    margin:0 auto;
     padding:1em 0;
 }
 .benefits h1 {
@@ -537,19 +548,52 @@ nav {
 
 
 
-
-
-
-
-
-
-
-
-
-
 /* contact section  */
+#link-contact {
+    width:70%;
+    margin:0 auto;
+    border-top:2px double rgba(209, 196, 209, 0.892);
+}
 
+label{
+    display: block;
+    padding:0.8rem 0;
+    font-size:clamp(18px,2.2vw,20px);
+}
+input:not(#submit-button) {
+    height:38px;
 
+}
+form {
+    width:max-content;
+    margin:1.1rem auto;
+    padding:1.2rem 2rem;
+    border:1px solid rgb(84, 82, 82);
+    border-radius: 16px;
+}
+textarea {
+    width:256px;
+
+}
+#submit-button {
+    width:40%;
+    margin:2rem auto;
+    display: block;
+    padding:0.4rem 0;
+    font-size:clamp(18px,3vw,22px);
+    background-color:transparent;
+    border-radius:4px;
+    border:1px solid #000;
+}
+#submit-button:hover{
+   color:red;
+   border-color:red;
+   transform: scale(1.2);
+}
+#submit-button:focus{
+    box-shadow: 0 4px 5px  rgb(104, 102, 102),
+    4px 0 5px  rgb(104, 102, 102);
+}
 
 /* footer section */
 
@@ -560,8 +604,11 @@ footer {
     display:grid;
     place-items: center;
 }
-footer h2 {
-    font-size:clamp(15px,1.4vw,30px);
+footer h2, .fa-github {
+    font-size:clamp(15px,1.4vw,23px);
     font-weight:370;
-
+    color:#fff;
+}
+.fa-github:hover {
+    color:#000;
 }

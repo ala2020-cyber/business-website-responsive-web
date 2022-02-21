@@ -74,14 +74,14 @@
                 </div>
                 <div class="statment">
                     <h3 class="title-statment">Excelent Websites </h3>
-                    <p >it's a good company , I have fun working with it , they had a highly skilled people which can design an launch cools web sites.</p>
+                    <p class="content-statment">It's a good company<br>have fun working with it <br>they had a highly skilled people which can design an launch cools web sites.</p>
                 </div>
             </div>
            <div class="review">
 
                 <div class="statment">
                     <h3 class="title-statment">Cool Design</h3>
-                    <p>by working with this company , I manage my business very well virtually , I Am very grateful for this designers , they make my life easier.</p>
+                    <p class="content-statment">by working with this company <br>I manage my business very well virtually <br>I Am very grateful for this designers <br> make my life easier.</p>
                 </div>
 
                 <div class="person">
@@ -111,7 +111,7 @@
                 </div>
                 <div class="statment"> 
                     <h3 class="title-statment">Excelent Company</h3>
-                    <p> by working with this company , I manage my business very well virtially , I'am very greatfull for this designers ,  they made my life very easy , thank you all.</p>
+                    <p class="content-statment"> by working with this company <br>I manage my business very well virtially <br>I'am very greatfull for this designers <br>they made my life very easy , thank you all.</p>
                 </div>
            </div>
 
@@ -176,8 +176,27 @@
 
 
         <!-- call to action section -->
-        <div  id="link-contact">
+        <div  id="link-contact" class="container">
+            <h2 class="description">Get in touch<span>Send message</span></h2>
+            <form action="">
+                <div class="full-name">
+                    <div class="full-namme__content">
+                        <label for="firstName">First Name<span style="color:red;">*</span></label>
+                        <input type="text" id="firstName" placeholder="First Name" required>
+                    </div>
+                    <div class="full-name__content">
+                        <label for="lastName">Last Name<span style="color:red;">*</span></label>
+                        <input type="text" id="lastName" placeholder="Last Name" required>
+                    </div>
+                </div>
 
+                <label for="mail">Email<span style="color:red;">*</span></label>
+                <input type="email" id="mail" placeholder="type an email" required>
+                
+                <label for="message">Message<span style="color:red;">*</span></label>
+                <textarea name="massage" id="message" cols="17" placeholder="type a message"></textarea>
+                <input type="submit" value="Send" id="submit-button">
+            </form>
         </div>
 
         <!-- end call to action section -->
@@ -186,7 +205,7 @@
 
 
     <footer>
-        <h2>made with ❤️ by Web Maker</h2>
+        <h2>made with ❤️ by Web Maker <a href="https://github.com/ala2020-cyber" target="_blank">  <i class="fa fa-github"></i></a></h2>
     </footer>
 
 
