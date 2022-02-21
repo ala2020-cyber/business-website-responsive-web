@@ -618,7 +618,7 @@ nav {
 }
   
 .contact a:hover {
-    color:#fa7a7b;
+    color:#023e8a;
 }
 
 @media screen and (min-width:750px) {
@@ -640,3 +640,14 @@ nav {
 
 
 /* footer section */
+
+footer {
+    padding: 0.5rem 0;
+    background-color:#023e8a;
+    display:grid;
+    place-items: center;
+}
+footer h2 {
+    font-size:clamp(16px,1.4vw,25px);
+
+}
