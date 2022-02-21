@@ -548,106 +548,20 @@ nav {
 
 
 /* contact section  */
-#link-contact {
-    width:100%;
-    height:89vh;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items: center;
-    background-color: rgba(233, 233, 233, 0.981);
-}
 
-#link-contact h1 {
-    width:60%;
-    text-align: center;
-    padding:0.7rem;
-    margin-bottom:1.5rem;
-    border-bottom:2.5px solid rgb(160, 157, 157);
-
-}
-
-#link-contact p {
-    width:55%;
-    padding: 1.5rem;
-    font-size:1.2rem;
-
-}
-
-.contact {
-    width:100%;
-    margin:1rem 0;
-    display:flex;
-    justify-content:center;
-    gap:2.2em;
-}
-
-.phone-section {
-    width:max-content;
-    height:max-content;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap:1.2em;
-
-    /* border:5px solid #1247ca; */
-}
-
-.email-section {
-    width:max-content;
-    height:max-content;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap:1.2em;
-
-    /* border:5px solid #783cba; */
-}
-
-.fa-phone , .fa-envelope {
-    font-size:1.85rem;
-    color:#645e5e;
-}
-
-.contact a {
-    font-size:1.07rem;
-    text-decoration: none;
-    color:#000;  
-}
-  
-.contact a:hover {
-    color:#023e8a;
-}
-
-@media screen and (min-width:750px) {
-    #link-contact {
-        height:75vh;
-    }
-
-    .contact a {
-        font-size: 1.1rem;
-    }
-
-    .contact {
-        padding-left: none;
-        gap:3em;
-    }
-}
-  
-    
 
 
 /* footer section */
 
 footer {
-    padding: 0.5rem 0;
+    padding: 0.4rem 0;
+    border-radius:4px 4px 0 0;
     background-color:#023e8a;
     display:grid;
     place-items: center;
 }
 footer h2 {
-    font-size:clamp(16px,1.4vw,25px);
+    font-size:clamp(15px,1.4vw,30px);
+    font-weight:370;
 
 }
