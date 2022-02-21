@@ -46,7 +46,7 @@ html::-webkit-scrollbar-thumb {
     width:100vw;
     height:100vh;
     background-color: var(--bgc-loding);
-
+    z-index:1000;
     position:absolute;
     top:0;
     left:0;
@@ -109,8 +109,23 @@ nav {
     color:#fff;
 }
 .logo img{
+<<<<<<< Updated upstream
     width:43%;
     margin-top:1.1em;
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+    max-width:40%;
+    margin-top:0.5em;
+=======
+    width:43%;
+    margin-top:1.1em;
+>>>>>>> ab6e156d22a4df098f3d20d5b219512468a08d0c
+=======
+    width:43%;
+    margin-top:1.1em;
+>>>>>>> ab6e156d22a4df098f3d20d5b219512468a08d0c
+>>>>>>> Stashed changes
 }
 
 
@@ -148,11 +163,11 @@ nav {
 }
 #check:checked ~ .links a {
     text-decoration: none;
-    font-size:1.25rem;
+    font-size:1.4rem;
     color:white;
 }
 #check:checked ~ .links a:hover {
-    color:#783cba;
+    color:#000;
 }
 
 
@@ -161,14 +176,13 @@ nav {
    flex-flow: column nowrap;
    justify-content: center;
    align-items: center;
-
    position:absolute;
-   top:8vh;
+   top:10vh;
    left:0;
-   width:100%;
-   height:50%;
+   width: 100%;
+   height:70%;
    margin:0 auto;
-   background-color:rgba(19, 37, 49, 0.866);
+   background-color:rgba(56, 61, 65, 0.583);
    box-sizing: border-box;
    z-index:4;
 
@@ -205,8 +219,20 @@ nav {
         margin-inline-start: 5vw;
         list-style: none;
     } 
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+    .links a {color:#000; text-decoration: none;font-size:1.25rem;
+    font-weight: 500;}
+    .links a:hover {color:#fff;} 
+=======
+=======
+>>>>>>> ab6e156d22a4df098f3d20d5b219512468a08d0c
+>>>>>>> Stashed changes
     .links a {color:#fff; text-decoration: none;font-size:1.2rem;}
     .links a:hover {color:#fc8481;} 
+>>>>>>> ab6e156d22a4df098f3d20d5b219512468a08d0c
 
     
 
@@ -219,11 +245,11 @@ nav {
         justify-content: center;
         align-items: center;
         position:absolute;
-        top:8vh;
+        top:10vh;
         left:-100%;
-        width:100%;
-        height:50%;
-        background-color:rgba(19, 37, 49, 0.866);
+        width: 100%;
+        height:70%;
+        background-color:rgba(56, 61, 65, 0.583);
         box-sizing: border-box;
         transition:.5s ease-in-out;
         z-index:3;
@@ -235,11 +261,22 @@ nav {
     }
     .links a {
         text-decoration: none;
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+        font-size:1.2rem;
+        color:#fff;
+=======
+=======
+>>>>>>> ab6e156d22a4df098f3d20d5b219512468a08d0c
+>>>>>>> Stashed changes
         font-size: 1.2rem;
         color:white;
     }
     .links a:hover {
         color:#783cba;
+>>>>>>> ab6e156d22a4df098f3d20d5b219512468a08d0c
     }
     html::-webkit-scrollbar {
         width:0.55rem;
@@ -259,28 +296,65 @@ nav {
 #value-proposition {
     height:100vh;
     margin-bottom:0.1em;
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+    background-color: #d3cfcc;
+    overflow: hidden;
+=======
+=======
+>>>>>>> ab6e156d22a4df098f3d20d5b219512468a08d0c
+>>>>>>> Stashed changes
     background-image: url("https://images.unsplash.com/photo-1644620990884-0e6e8743f71a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+>>>>>>> ab6e156d22a4df098f3d20d5b219512468a08d0c
+=======
+>>>>>>> ab6e156d22a4df098f3d20d5b219512468a08d0c
+>>>>>>> Stashed changes
 }
 .landing-content {
-    text-align: center;
-    width:max-content;
+    width:70%;
     margin-bottom: 2em;
     margin:0 auto;
     color:#fff;
     padding:6.5em 0;
 }
 
+<<<<<<< HEAD
+.landing-title {
+    font-size:clamp(25px,5vw,50px);
+    font-weight: 700;
+    position:relative;
+    z-index:1;
+}
+.landing-title::before {
+    content:"";
+    background-image: url("https://images.unsplash.com/photo-1641984790242-d8aa477d306c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    position: absolute;
+    z-index:-1;
+    top:-62%;
+    right: -20%;
+    width:50%;
+    height:600%
+=======
 .landing-content p {
     font-size: 3rem;
     width:max-content;
     margin:auto;
+>>>>>>> ab6e156d22a4df098f3d20d5b219512468a08d0c
 }
 .landing-content span {
-    font-weight: 270;
-    font-size:2.5rem;
+    font-weight:lighter;
+    font-size:clamp(20px,3vw,40px);
     display:block;
     
 }
@@ -288,10 +362,22 @@ nav {
 
 .call-to-action {
     width:max-content;
-    margin:0.5em auto 0;
+    margin:1em 0 0;
     padding:0.5em;
     display: block;
+<<<<<<< Updated upstream
     font-size: 1.5em;
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+    font-size: 1.3em;
+=======
+    font-size: 1.5em;
+>>>>>>> ab6e156d22a4df098f3d20d5b219512468a08d0c
+=======
+    font-size: 1.5em;
+>>>>>>> ab6e156d22a4df098f3d20d5b219512468a08d0c
+>>>>>>> Stashed changes
     text-decoration: none;
     color:#fff;
     border:1px solid #fff;
@@ -299,8 +385,8 @@ nav {
     transition: all ease-in-out .1s;
 } 
 .call-to-action:hover {
-    color:#fc8481;
-    border:1px solid #fc8481;
+    color:#D29D2B;
+    border:1px solid #D29D2B;
 }
 
 
@@ -382,10 +468,10 @@ nav {
     }
 .review{
     border:2.4px solid rgba(21, 133, 219, 0.481);
-    border-radius:5em;
+    border-radius:40px;
     padding:1.6em;
     width:70%;
-    margin:1.2em auto;
+    margin:0.8em auto;
     display:flex;
     justify-content: center;
 }
@@ -393,7 +479,7 @@ nav {
 .about-person-wrapper {
     width:max-content;
     height:max-content;
-    background-color:rgb(213, 228, 227);
+    background-color:rgb(142, 196, 238);
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -443,9 +529,9 @@ nav {
 #link-benefits {
     height:max-content;
     color:#fff;
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtypdf8TmFbkpgmsqUxyF0GfGxhP8IQUJyDlqPNEVppJ16z88NUi9YAnuVwUfVf6WqpSg&usqp=CAU");
-    background-size:40%;
-    background-color:rgb(23,4,32);
+    background-image: url("https://images.unsplash.com/photo-1538294020340-2982868c6160?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+    opacity: 0.9;
+    background-size: cover;
     background-position:center;
     background-repeat: no-repeat;
 }
@@ -456,11 +542,12 @@ nav {
 
 
 .benefit{
+    color:#000;
     display:flex;
-    justify-content: center;
-    gap:1em;
-    margin:1.2em 0;
+    justify-content:flex-start;
     padding:20px;
+<<<<<<< HEAD
+=======
     border-radius:16px;
     border:4px solid #d4d4d4;
     background:rgba(8, 23, 233, 0.481);
@@ -469,6 +556,13 @@ nav {
 
 .benefit:hover {
     background:transparent;
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+>>>>>>> ab6e156d22a4df098f3d20d5b219512468a08d0c
+=======
+>>>>>>> ab6e156d22a4df098f3d20d5b219512468a08d0c
+>>>>>>> Stashed changes
 }
 
 
@@ -478,7 +572,7 @@ nav {
     padding:1em;
 }
 .benefits h1 {
-    font-size:clamp(1rem,1.4rem,2rem);
+    font-size:clamp(20px,5vw,2.7rem);
 }
 
 
