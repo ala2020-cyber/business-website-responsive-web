@@ -205,8 +205,8 @@ nav {
         list-style: none;
     } 
 
-    .links a {color:#fff; text-decoration: none;font-size:1.2rem;}
-    .links a:hover {color:#fc8481;} 
+    .links a {color:#000; text-decoration: none;font-size:1.2rem;}
+    .links a:hover {color:#fff;} 
 
     
 
@@ -259,14 +259,14 @@ nav {
 #value-proposition {
     height:100vh;
     margin-bottom:0.1em;
-    background-color: #d3cfcc;
+    background-color: #adadad;
     overflow: hidden;
 }
 .landing-content {
     width:70%;
     margin-bottom: 2em;
     margin:0 auto;
-    color:#fff;
+    color:#000;
     padding:6.5em 0;
 }
 
@@ -285,13 +285,13 @@ nav {
     position: absolute;
     z-index:-1;
     top:-62%;
-    right: -20%;
+    right: -40%;
     width:50%;
-    height:600%
+    height:700%;
+}
 .landing-content p {
-    font-size: 3rem;
+    font-size: clamp(16px,4vw,40px);
     width:max-content;
-    margin:auto;
 }
 .landing-content span {
     font-weight:lighter;
@@ -303,19 +303,19 @@ nav {
 
 .call-to-action {
     width:max-content;
-    margin:1em 0 0;
+    margin:1.5em 0 0;
     padding:0.5em;
     display: block;
-    font-size: 1.5em;
+    font-size:1.2rem;
     text-decoration: none;
-    color:#fff;
-    border:1px solid #fff;
+    color:#000;
+    border:1px solid #000;
     border-radius: 7px;
     transition: all ease-in-out .1s;
 } 
 .call-to-action:hover {
-    color:#D29D2B;
-    border:1px solid #D29D2B;
+    color:#167786;
+    border:1px solid #167786;
 }
 
 
@@ -474,17 +474,14 @@ nav {
     color:#000;
     display:flex;
     justify-content:flex-start;
-    padding:20px;
-    border-radius:16px;
-    border:4px solid #d4d4d4;
-    background:rgba(8, 23, 233, 0.481);
+    padding:20px 0;
     transition: all 0.05s ease-in ;
 }
 
 .benefits {
     width:70%;
     margin: auto;
-    padding:1em;
+    padding:1em 0;
 }
 .benefits h1 {
     font-size:clamp(20px,5vw,2.7rem);
@@ -522,7 +519,6 @@ nav {
 .feature{
     flex:1;
     padding:1em 0;
-    margin:1.2em 0;
     background:rgba(255, 255, 255, 0.563);
     border:2px solid #c7c5c5;
     border-radius:6px;
