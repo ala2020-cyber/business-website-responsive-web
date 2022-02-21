@@ -591,8 +591,7 @@ textarea {
    transform: scale(1.2);
 }
 #submit-button:focus{
-    box-shadow: 0 4px 5px  rgb(104, 102, 102),
-    4px 0 5px  rgb(104, 102, 102);
+    box-shadow: 4px 4px 7px  rgb(104, 102, 102);
 }
 
 /* footer section */
@@ -607,8 +606,8 @@ footer {
 footer h2, .fa-github {
     font-size:clamp(15px,1.4vw,23px);
     font-weight:370;
-    color:#fff;
+    color:#000;
 }
 .fa-github:hover {
-    color:#000;
+    color:#fff;
 }
