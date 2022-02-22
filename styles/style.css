@@ -1,56 +1,74 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Amita&display=swap');
-
-
-
-:root {
-    --bgc-loding:#ade8f4;
-    --circle-c:rgba(104, 103, 103, 0.2);
-}
 
 * {
     margin:0;
     padding:0;
+    box-sizing: border-box;
     font-family: Poppins;
-    scroll-behavior: smooth;
 }
+
+/* components  */
+
+.description{
+    font-family: 'Courgette', cursive;
+    text-align: center;
+    font-size:clamp(30px,5vw,3rem);
+}
+.description span {
+    display:block;
+    font-size:clamp(16px,2.5vw,1.3rem);
+    color:rgba(2, 1, 1, 0.802);
+}
+
+.container {
+    padding:4rem 0;
+}
+.fluid-container {
+    width:70%;
+    margin:0 auto;
+}
+
+
 
 html {
     overflow: hidden;
+    scroll-behavior: smooth;
 }
-
-.showing {
-    overflow-x:hidden;
-    overflow-y:scroll;
-}
-
 html::-webkit-scrollbar {
- width:0.6rem;
-}
+    width:0.6rem;
+   }
 html::-webkit-scrollbar-track {
     background-color:rgba(19, 37, 49, 0.864);
-
+   
 }
-
+   
 html::-webkit-scrollbar-thumb {
     background-color:white ;
     border-radius: 5px;
 }
+   
+
+
 
 
 
 
 /* loding code */
+.showing {
+    overflow-x:hidden;
+    overflow-y:scroll;
+}
+
 .loding {
     width:100vw;
     height:100vh;
-    background-color: var(--bgc-loding);
+    background-color:#ade8f4;
     z-index:1000;
     position:absolute;
     top:0;
     left:0;
-
     display:grid;
     place-items: center;
 }
@@ -63,12 +81,10 @@ html::-webkit-scrollbar-thumb {
 #circle {
     width: 40px;
     height:40px;
-
-    border:2.5px solid var(--circle-c);
+    border:2.5px solid rgba(104, 103, 103, 0.2);
     border-top-color:#03045e;
     border-bottom-color:#03045e;
     border-radius:50%;
-
     animation: loding-animation 0.85s linear  infinite   forwards;
 
 }
@@ -101,15 +117,14 @@ html::-webkit-scrollbar-thumb {
 
 
 
+/* navigation bar  */
 nav {
-    width:70%;
-    margin:0 auto;
     display:flex;
     justify-content: space-between;
     color:#fff;
 }
 .logo img{
-    width:43%;
+    width:80px;
     margin-top:1.1em;
 }
 
@@ -118,26 +133,12 @@ nav {
     display:none;
   }
 
-.fas {
+#menu > *{
     color:#000;
-}
-
-
-.fa-bars {
-    display:block;
-    cursor:pointer;
-    font-size: 1.5rem;
-    padding-inline-end:5mm; 
-    padding-block-start: 3mm;
-}
-.fa-times{
+    padding:3mm 5mm 0 0 0;
     cursor:pointer;
     font-size:1.5rem;
-    padding-inline-end:5mm; 
-    padding-block-start: 3mm;
 }
-
-
 
 
 
@@ -245,16 +246,16 @@ nav {
         width:0.55rem;
     }
 
+    .fluid-container {
+        width:86%;
+    }
+
 
     
 } 
-/* end of media query */
 
 
-
-
-
-
+/* value proposition section  */
 
 #value-proposition {
     height:100vh;
@@ -263,26 +264,21 @@ nav {
     overflow: hidden;
 }
 .landing-content {
-    width:70%;
     margin-bottom: 2em;
-    margin:0 auto;
     color:#000;
     padding:6.5em 0;
 }
 
 .landing-title {
     width:max-content;
-    font-size:clamp(20px,5vw,40px);
+    font-size:clamp(3vw,5vw,40px);
     font-weight: 700;
     position:relative;
     z-index:1;
 }
 .landing-title::before {
     content:"";
-    background-image: url("https://images.unsplash.com/photo-1641984790242-d8aa477d306c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; 
+    background: url("https://images.unsplash.com/photo-1641984790242-d8aa477d306c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80") center / cover no-repeat;
     position: absolute;
     z-index:-1;
     top:-62%;
@@ -294,6 +290,8 @@ nav {
     .landing-title::before {
         right:0;
         top:0;
+        width:55%;
+        height:750%;
     }
 }
 .landing-content span {
@@ -323,22 +321,6 @@ nav {
 
 
 
-/* components  */
-
-.description{
-    text-align: center;
-    font-size:clamp(30px,5vw,3rem);
-}
-.description span {
-    display:block;
-    font-size:clamp(16px,2.5vw,1.3rem);
-    color:rgba(2, 1, 1, 0.802);
-}
-
-.container {
-    padding:4rem 0;
-}
-
 
 
 
@@ -355,7 +337,7 @@ nav {
     margin:0 0.7rem;
 }
     .person {    
-        width:40%;
+        width:36%;
         position: relative;
         display:grid;
         place-items: center;
@@ -383,8 +365,6 @@ nav {
     .statment {
         width:max-content;
         padding:2rem;
-        position:relative;
-        flex:1;
     }
     @media screen and (max-width:730px) {
         .review.statment > *{
@@ -392,28 +372,28 @@ nav {
         }        
     }
     .title-statment {
-        font-size: 1.5rem;
-        font-weight: 700;
+        font-size:clamp(25px,3vw,30px);
+        font-weight:bold;
         color:rgb(10, 65, 124);
     }
     .content-statment{
         display: inline-block;
-        margin-top:1em;
+        margin-top:10px;
         font-size:1.2rem;
-        width:40vw;
+        width:35vw;
         height:fit-content;
     }
 .review{
     border:2.4px solid rgba(21, 133, 219, 0.481);
     border-radius:40px;
-    padding:1.6em;
     height:max-content;
-    width:fit-content;
+    width:70%;
     margin:0.8em auto;
     gap:0.7em;
     display:flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .about-person-wrapper {
@@ -431,9 +411,6 @@ nav {
 
 .about-person-wrapper::before {
     content:"";
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
     position:absolute;
     top:0;
     width:100%;
@@ -444,13 +421,13 @@ nav {
     display:none;
 }
 .image-detail1::before {
-    background-image: url("https://i0.wp.com/www.financialafrik.com/wp-content/uploads/2021/01/Elon-musk-plus-riche-du-monde-pandemique.jpg?fit=1200%2C800&ssl=1");
+    background: url("https://i0.wp.com/www.financialafrik.com/wp-content/uploads/2021/01/Elon-musk-plus-riche-du-monde-pandemique.jpg?fit=1200%2C800&ssl=1") center / cover no-repeat;
 }
 .image-detail2::before{
-    background-image: url("https://img-0.journaldunet.com/PujDkZ9YAmFXrZxdCBLKNgiEnRg=/1500x/smart/45776488e7eb4b8080d4ad6e0da4bd74/ccmcms-jdn/11517282.jpg");
+    background: url("https://img-0.journaldunet.com/PujDkZ9YAmFXrZxdCBLKNgiEnRg=/1500x/smart/45776488e7eb4b8080d4ad6e0da4bd74/ccmcms-jdn/11517282.jpg") center / cover no-repeat;
 }
 .image-detail3::before {
-    background-image: url("https://m-cdn.phonearena.com/images/article/131223-wide-two_1200/Apple-CEO-Tim-Cook-says-he-might-leave-sometime-over-the-next-ten-years.jpg");
+    background: url("https://m-cdn.phonearena.com/images/article/131223-wide-two_1200/Apple-CEO-Tim-Cook-says-he-might-leave-sometime-over-the-next-ten-years.jpg") center / cover no-repeat;
 }
 
 .name {
@@ -469,11 +446,8 @@ nav {
 #link-benefits {
     height:max-content;
     color:#fff;
-    background-image: url("https://images.unsplash.com/photo-1538294020340-2982868c6160?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+    background: url("https://images.unsplash.com/photo-1538294020340-2982868c6160?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80") center / cover no-repeat;
     opacity: 0.9;
-    background-size: cover;
-    background-position:center;
-    background-repeat: no-repeat;
 }
 
 #link-benefits span {
@@ -490,12 +464,11 @@ nav {
 }
 
 .benefits {
-    width:70%;
-    margin:0 auto;
     padding:1em 0;
 }
 .benefits h1 {
     font-size:clamp(20px,5vw,2.7rem);
+    margin: 0;
 }
 
 
@@ -509,8 +482,6 @@ nav {
 
 #features-section {
     text-align: center;
-    width:70%;
-    margin:0 auto;
 }
 .features {
     margin:2em auto 0;
@@ -541,43 +512,46 @@ nav {
 }
 
 .feature img {
-    /* width:95%; */
+    width:fit-content;
     border-radius: 6px;
 }
-
+@media (max-width:688px) {
+    .feature {
+        margin:10px;
+    }
+}
 
 
 
 /* contact section  */
 #link-contact {
-    width:70%;
-    margin:0 auto;
-    border-top:2px double rgba(209, 196, 209, 0.892);
+    border-top:2px double rgba(209, 196, 209);
 }
 
 label{
     display: block;
     padding:0.8rem 0;
-    font-size:clamp(18px,2.2vw,20px);
+    font-size:clamp(18px,2vw,19px);
 }
 input:not(#submit-button) {
     height:38px;
-
+    padding:0 7px;
 }
 form {
-    width:max-content;
-    margin:1.1rem auto;
-    padding:1.2rem 2rem;
-    border:1px solid rgb(84, 82, 82);
+    background: #1111;
+    width: fit-content;
+    margin:1.1rem 0;
+    padding:0.5rem 3rem;
+    border:1px solid rgb(84, 82, 82,0.5);
     border-radius: 16px;
 }
 textarea {
-    width:256px;
-
+    resize:none;
+    padding:0 7px;
 }
 #submit-button {
-    width:40%;
-    margin:2rem auto;
+    width:100px;
+    margin:2rem 5.5rem;
     display: block;
     padding:0.4rem 0;
     font-size:clamp(18px,3vw,22px);
@@ -593,21 +567,47 @@ textarea {
 #submit-button:focus{
     box-shadow: 4px 4px 7px  rgb(104, 102, 102);
 }
+.contact-image {
+    display: none;
+}
+.contact-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (min-width:1050px){
+    .contact-content {
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        gap:1rem;
+    }
+    
+    .contact-image {
+        display: block;
+        width:510px;
+        height:500px;
+        background: url("https://images.unsplash.com/photo-1461532257246-777de18cd58b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=876&q=80") center / cover no-repeat;
+        opacity: 0.95;
+        border-radius:16px;
+    }
+    
+}
 
 /* footer section */
 
 footer {
-    padding: 0.4rem 0;
+    padding: 0.5rem 0;
     border-radius:4px 4px 0 0;
     background-color:#023e8a;
     display:grid;
     place-items: center;
 }
 footer h2, .fa-github {
-    font-size:clamp(15px,1.4vw,23px);
+    font-size:clamp(15px,1.2vw,20px);
     font-weight:370;
-    color:#000;
+    color:#fff;
 }
 .fa-github:hover {
-    color:#fff;
+    color:#000;
 }

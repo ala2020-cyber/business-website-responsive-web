@@ -21,10 +21,10 @@
     <!--landing section -->
     <section id="value-proposition">
 
-        <nav>
+        <nav class="fluid-container">
         
         <input type="checkbox" id="check">
-        <label for="check" class="menu">
+        <label for="check" class="menu" id="menu">
             <i class="fas fa-bars"></i>
             <i id ="close-logo"class="fas fa-times"></i>
         </label>
@@ -46,7 +46,7 @@
         </nav>
 
 
-          <div class="landing-content">
+          <div class="landing-content fluid-container">
             <p class="landing-title">Skilled people with cool designs.</p>
             <span>We are waiting !</span>
             <a href="#link-contact" class="call-to-action">Contact Us</a>         
@@ -59,7 +59,7 @@
     <section  id ="about-us" class="container">
 
             <h2 class="description">Our happy clients <span>What they say about us</span></h2>
-            <div class="review">
+            <div class="review fluid-container">
          
                 <div class="person">
                     <div class="about-person-wrapper image-detail1">
@@ -69,15 +69,15 @@
                             <li><a target="_blank" href="https://www.instagram.com/elonmusk/"><i class="fab fa-sm fa-instagram"></i></a></li>
                             <li><a target="_blank" href="https://twitter.com/elonmusk?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="fab fa-sm fa-twitter"></i></a></li>
                         </ul>
-                </div>
+                    </div>
 
                 </div>
                 <div class="statment">
                     <h3 class="title-statment">Excelent Websites </h3>
-                    <p class="content-statment">It's a good company<br>have fun working with it <br>they had a highly skilled people which can design an launch cools web sites.</p>
+                    <p class="content-statment">It's a good company<br>have fun working with it <br>highly skilled people.</p>
                 </div>
             </div>
-           <div class="review">
+           <div class="review fluid-container">
 
                 <div class="statment">
                     <h3 class="title-statment">Cool Design</h3>
@@ -92,12 +92,12 @@
                             <li><a target="_blank" href="https://www.instagram.com/jeffbezos/"><i class="fab fa-sm fa-instagram"></i></a></li>
                             <li><a target="_blank" href="https://twitter.com/JeffBezos?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="fab fa-sm fa-twitter"></i></a></li>
                         </ul>
-                </div>
+                    </div>
 
                 </div>
            </div>
 
-           <div class="review">
+           <div class="review fluid-container">
                 <div class="person">
                     <div class="about-person-wrapper image-detail3">
                         <h3 class="name" >Tim Cook</h3>
@@ -106,7 +106,7 @@
                             <li><a target="_blank" href="https://www.instagram.com/stevejobsbestfriendtimcook/?hl=fr"><i class="fab fa-sm fa-instagram"></i></a></li>
                             <li><a target="_blank" href="https://twitter.com/tim_cook?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="fab fa-sm fa-twitter"></i></a></li>
                         </ul>
-                </div>
+                    </div>
 
                 </div>
                 <div class="statment"> 
@@ -121,7 +121,7 @@
         <section id="link-benefits" class="container">
                 <h2 class="description">In our work<span>We will offer you</span></h2>
                 
-                <div class="benefits">
+                <div class="benefits fluid-container">
                     <div class="benefit">
                         <h1>Cool Desings</h1>
                     </div>
@@ -139,7 +139,7 @@
          <!--end of benefits  -->
     
          <!-- feature section -->
-        <section id="features-section" class="container">
+        <section id="features-section" class="container fluid-container">
             <h2 class="description">In Our Design <span>We make</span></h2>
 
             <div class="features">
@@ -169,25 +169,28 @@
         <!-- call to action section -->
         <div  id="link-contact" class="container">
             <h2 class="description">Get in touch<span>Send message</span></h2>
-            <form action="">
-                <div class="full-name">
-                    <div class="full-namme__content">
-                        <label for="firstName">First Name<span style="color:red;">*</span></label>
-                        <input type="text" id="firstName" placeholder="First Name" required>
+            <div class="contact-content fluid-container">
+                <form>
+                    <div class="full-name">
+                        <div class="full-namme__content">
+                            <label for="firstName">First Name<span style="color:red;">*</span></label>
+                            <input type="text" id="firstName" placeholder="First Name" required>
+                        </div>
+                        <div class="full-name__content">
+                            <label for="lastName">Last Name<span style="color:red;">*</span></label>
+                            <input type="text" id="lastName" placeholder="Last Name" required>
+                        </div>
                     </div>
-                    <div class="full-name__content">
-                        <label for="lastName">Last Name<span style="color:red;">*</span></label>
-                        <input type="text" id="lastName" placeholder="Last Name" required>
-                    </div>
-                </div>
-
-                <label for="mail">Email<span style="color:red;">*</span></label>
-                <input type="email" id="mail" placeholder="type an email" required>
-                
-                <label for="message">Message<span style="color:red;">*</span></label>
-                <textarea name="massage" id="message" cols="17" placeholder="type a message"></textarea>
-                <input type="submit" value="Send" id="submit-button">
-            </form>
+    
+                    <label for="mail">Email<span style="color:red;">*</span></label>
+                    <input type="email" id="mail" placeholder="type an email" required>
+                    
+                    <label for="message">Message<span style="color:red;">*</span></label>
+                    <textarea name="message" id="message" rows="7" cols="15" placeholder="type a message"></textarea>
+                    <input type="submit" value="Send" id="submit-button">
+                </form>
+                <div class="contact-image"></div>
+            </div>
         </div>
 
         <!-- end call to action section -->
