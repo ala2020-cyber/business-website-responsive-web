@@ -9,17 +9,6 @@
             box-sizing: border-box;
     font-family: Poppins;
 }
- /* stop animation on mobile phone  */
-@media (max-width: 800px) {
-    * {
-     -webkit-transition: none !important;
-     -moz-transition: none !important;
-     -o-transition: none !important;
-     -ms-transition: none !important;
-     transition: none !important;
-     animation-name: none;
-    }
-  }
 
 /* components  */
 
@@ -45,7 +34,7 @@
 
 
 html {
-    overflow: hidden;
+    overflow-y:scroll;
     scroll-behavior: smooth;
 }
 html::-webkit-scrollbar {
@@ -68,12 +57,7 @@ html::-webkit-scrollbar-thumb {
 
 
 /* loding code */
-.showing {
-    overflow-x:hidden;
-    overflow-y:scroll;
-}
-
-.loding {
+.loading {
     width:100vw;
     height:100vh;
     background-color:#ade8f4;
@@ -85,11 +69,6 @@ html::-webkit-scrollbar-thumb {
     display:grid;
     place-items: center;
 }
-
- .loding-place{
-   position:relative;  
-   display:none;
-} 
 
 
 .vanish-away {
@@ -157,7 +136,24 @@ html::-webkit-scrollbar-thumb {
 
 /* end of loding code */
 
-
+/* button scrool to top  */
+#button_top {
+    position:fixed;
+    right:12px;
+    bottom: 12px;
+    color:#fff;
+    width:35px;
+    height:35px;
+    background-color: #023e8a;
+    border-radius: 50%;
+    opacity:0.85;
+}
+#button_top i {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
 
 
 /* navigation bar  */
@@ -445,7 +441,7 @@ nav {
             list-style:none;
         }
         .social-media a{
-            font-size:1.5em;
+            font-size:clamp(20px,2vw,1.5em);
             color:#000; 
             -webkit-transition:0.3ms ease-in; 
             -o-transition:0.3ms ease-in; 
@@ -525,7 +521,7 @@ nav {
         -ms-flex-align: center;
             align-items: center;
     border-radius:50%;
-    padding:55px;
+    padding:clamp(40px,5vw,75px);
     position:relative;
 }
 
@@ -551,10 +547,10 @@ nav {
 }
 
 .name {
-    font-size:1.65rem;
+    font-size:clamp(20px,2vw,1.65rem);
 }
 .profession {
-    font-size:1rem;
+    font-size:clamp(14px,1vw,1rem);
     font-weight: 300;
 }
 
@@ -670,7 +666,7 @@ nav {
 label{
     display: block;
     padding:0.8rem 0;
-    font-size:clamp(18px,2vw,19px);
+    font-size:clamp(15px,1.5vw,18px);
 }
 input:not(#submit-button) {
     height:38px;
@@ -687,7 +683,8 @@ form {
     border-radius: 16px;
 }
 textarea {
-    resize:none;
+    /* resize:none; */
+    max-width:274px;
     padding:0 7px;
 }
 #submit-button {
@@ -761,7 +758,7 @@ footer {
     place-items: center;
 }
 footer h2, .fa-github {
-    font-size:clamp(15px,1.2vw,20px);
+    font-size:clamp(15px,1.5vw,18px);;
     font-weight:370;
     color:#fff;
 }

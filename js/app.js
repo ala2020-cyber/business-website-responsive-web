@@ -1,8 +1,6 @@
-const loding= document.querySelector('.loding');
-
-const html_elem=document.querySelector('html');
+const loading= document.querySelector('.loading');
 /* loding listner */
 window.addEventListener('load' , () => {
-    loding.classList.add('vanish-away','loding-place');
-    html_elem.classList.add('showing');
+    loading.classList.add('vanish-away');
+    loading.style.display="none";
 })
